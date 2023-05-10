@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <body class="d-none">
+        <div class="row bg-dark vh-100 vw-100 overflow-hidden">
+            <aside class="sidebar">
+            </aside>
+            <div class="col-4 vh-100 overflow-auto bg-black  rounded-end-2 border-start border-end border-dark border-1">
+                <div class="card-body border-bottom border-opacity-25 border-secondary"> 
+                    <h2 class="fw-bold text-white fs-3 p-4 ">Search</h2>
+                    <div class="search-bar position-relative mb-5">
+                        <input type="text" class="bg-dark w-75 p-1 border-0 text-white outline-none search" placeholder="search">
+                        <i class="bi bi-search position-absolute text-white-50 search-icon"></i>
+                    </div>
+                </div>
+                    <p class="text-white fw-bold fs-5">Recent</p>                 
+                    <p class="recent fw-bold ">No recent searches</p>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                window.onload = function () {
+                    document.body.classList.remove('d-none');
+                };
+            </script>
+
+    </body>
+
+</html>

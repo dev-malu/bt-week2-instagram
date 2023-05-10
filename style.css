@@ -1,0 +1,76 @@
+.sidebar-link {
+    border-radius: 20px;
+    transition: background-color 0.2s linear;
+}
+.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.main-content {
+    width: 850px;
+    max-width: 70vw;
+    margin: auto;
+}
+.status-bar .left-arrow, .status-bar .right-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+}
+.status-bar .left-arrow{
+    left: 1rem;
+}
+.status-bar .right-arrow{
+    right: 1rem;
+}
+.propic {
+    height: 3rem;
+}
+#status {
+    transition: all 0.2s linear;
+}
+
+.prof-img {
+    width: 3rem;
+    object-fit: cover;
+
+}
+.cardd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: none;
+    color: black;
+}
+.search {
+    text-indent: 25px;
+    font-size: 18px;
+}
+.insta-home i {
+    display: none;
+}
+.search-open .insta-home .instagram-icon {
+    display: none;
+}
+.search-open .insta-home i {
+    display: block;
+}
+.search-open .sidebar-items span {
+    display: none !important;
+}
+.search-sidbar {
+    display: none;
+}
+.search-open .search-sidbar {
+    display: flex;
+    flex-direction: column;
+    left: 100%;
+    bottom: 0;
+    top: 0;
+    width: 300px;
+    z-index: 10;
+}
