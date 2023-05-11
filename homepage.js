@@ -296,11 +296,24 @@ var generatepDescription = (pItem) => {
     action.href = pItem.action;
     action.appendChild(document.createTextNode(pItem.action));
 
+    action.addEventListener('click',function(ev) {
+        ev.preventDefault();
+        var inviteModal = new bootstrap.Modal('#invite-popup');
+        inviteModal.show();
+    });
+
+    
+
     outerDiv.appendChild(peopleDescriptionContainer);
     outerDiv.appendChild(action);
 
     return outerDiv;
 };
+
+var sentRequest = document.getElementById('send');
+sentRequest.addEventListener('click',function() {
+    alert('Request sent successfully.');
+});
 
 var rightContainer = document.getElementById('profile-switch');
 
