@@ -74,3 +74,6 @@
     width: 300px;
     z-index: 10;
 }
+.comment-input {
+    max-width: 140px;
+}

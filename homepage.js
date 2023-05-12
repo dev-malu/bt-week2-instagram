@@ -229,9 +229,9 @@ var card = (item) => {
     commentIcon.classList.add('bi', 'bi-emoji-smile');
     
     var inputComment = document.createElement('input');
-    inputComment.classList.add('bg-black', 'border-0','text-white');
-    inputComment.setAttribute('type','input');
-    inputComment.setAttribute('placeholder','Add a comment...');
+    inputComment.classList.add('bg-black', 'border-0', 'text-white', 'comment-input');
+    inputComment.setAttribute('type', 'input');
+    inputComment.setAttribute('placeholder', 'Add a comment...');
     
     var postBtn = document.createElement('button');
     postBtn.classList.add('bg-black', 'border-0', 'fw-bold', 'text-info');
